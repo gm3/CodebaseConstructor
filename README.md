@@ -2,6 +2,15 @@
 
 This script is a Unity C# script that appears to be responsible for constructing code documentation. It uses regular expressions to search through all C# files in the Application.dataPath directory and extract information about classes, methods, and fields. The extracted information is then stored in a nested dictionary structure, where the top-level key is the class name, the second-level key is the method or field name, and the value is a list of strings containing information about the method or field. The script also includes a method called GenerateMarkdown() that appears to be responsible for generating markdown documentation from the extracted information, but the implementation is not shown. -GPT 
 
+Certainly, here is a list of the methods, variables, and fields in the provided script and a general description of what they do:
+
+Methods:
+
+Start(): This method is called when the script is first initialized. It gets a reference to the button and adds a listener for clicks, gets a list of all .cs files in the Application.dataPath directory, and creates a new directory in the Application.streamingAssetsPath directory. It then calls the TaskOnClick() method.
+TaskOnClick(): This method appears to be responsible for starting the process of generating code documentation. It calls the SearchAllScripts() method, which uses regular expressions to extract information about classes, methods, and fields from all C# files in the Application.dataPath directory.
+SearchAllScripts(): This method uses regular expressions to search through all C# files in the Application.dataPath directory and extract information about classes, methods, and fields. The extracted information is then stored in a nested dictionary structure, where the top-level key is the class name, the second-level key is the method or field name, and the value is a list of strings containing information about the method or field.
+GenerateMarkdown(): This method appears to be responsible for generating markdown documentation from the extracted information, but the implementation is not shown
+
 
 ```csharp=
 using System;

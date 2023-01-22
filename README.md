@@ -1,5 +1,8 @@
 # CodebaseConstructor
 
+This script is a Unity C# script that appears to be responsible for constructing code documentation. It uses regular expressions to search through all C# files in the Application.dataPath directory and extract information about classes, methods, and fields. The extracted information is then stored in a nested dictionary structure, where the top-level key is the class name, the second-level key is the method or field name, and the value is a list of strings containing information about the method or field. The script also includes a method called GenerateMarkdown() that appears to be responsible for generating markdown documentation from the extracted information, but the implementation is not shown. -GPT 
+
+
 ```csharp=
 using System;
 using System.IO;
